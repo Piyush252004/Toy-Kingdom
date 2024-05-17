@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            Toys
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+        <meta name="rating" content="General">
+        <meta name="expires" content="never">
+        <meta name="language" content="English, EN">
+        <meta name="description" content="Shopping cart">
+        <meta name="keywords" content="html">
+        <meta name="author" content="dcwebmakers.com">
+        <script src="storage.js"></script>
+        <link rel="stylesheet" href="storagestyle.css">
+    </head>
+<body onload="doShowAll()" window.load="doShowAll()">
+    <form name="shoppingList">
+        <fieldset>
+            <legend>Shopping cart</legend>
+            <label>Item: <input type="text" name="name"></label>
+            <lable>Quantity: <input type="text" name="data"></lable>
+
+            <input type="button" value="save" onclick="SaveItem()">
+            <input type="button" value="update" onclick="ModifyItem()">
+            <input type="button" value="Delete" onclick="RemoveItem()">
+        </fieldset>
+        <div id="items_table">
+            <h2>Shopping List</h2>
+            <table id="list"></table>
+            <lable><input type="button" value="Clear" onclick="ClearAll()">Delete All Items</lable>
+        </div>
+    </form>
+</body>
+</html>
